@@ -62,6 +62,7 @@ module.exports = cli
 
         sallesDisponibles.sort();
         
+        
         console.log("Les salles disponibles à cet horaire sont :")
         sallesDisponibles.forEach((salle) => {
             console.log(salle);
