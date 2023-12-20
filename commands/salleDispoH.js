@@ -60,6 +60,8 @@ module.exports = cli
         // Liste des salles disponibles à cet horaire
         const sallesDisponibles = toutesLesSalles.filter(salle => !sallesOccupees.includes(salle));
 
+        sallesDisponibles.sort();
+
         console.log("Les salles disponibles à cet horaire sont :")
         sallesDisponibles.forEach((salle) => {
             console.log(salle);
